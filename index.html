@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://fontawesome.com/9ea5b84ccd.js" crossorigin="anonymous"></script>
+  <!--<script src="https://fontawesome.com/9ea5b84ccd.js" crossorigin="anonymous"></script>-->  
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <video class="background-video" autoplay muted loop>
+        <source src="cloudbg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
     <div class="container">
         <div class="weather-header">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -42,27 +49,28 @@
                 </div>
             </div>
             <div class="weather-card wctwo">
-                <i class="fa-solid fa-droplet footer-icon"></i>
+                <i class="fa-solid fa-temperature-half footer-icon"></i>
                 <div class="footer-div">
-                    <p>Feels Like</p>
-                    <p class="weather_feelslike">15&#176</p>
+                    <p>Humidity</p>
+                    <p class="weather_feelslike humidity">15&#176</p>
                 </div>
             </div>
             <div class="weather-card wcthree">
-                <i class="fa-solid fa-droplet footer-icon"></i>
+                <i class="fa-solid fa-wind footer-icon"></i>
                 <div class="footer-div">
-                    <p>Feels Like</p>
-                    <p class="weather_feelslike">15&#176</p>
+                    <p>Wind</p>
+                    <p class="weather_feelslike wind">15&#176</p>
                 </div>
             </div>
             <div class="weather-card wcfour">
-                <i class="fa-solid fa-droplet footer-icon"></i>
+                <i class="fa-solid fa-gauge-high footer-icon"></i>
                 <div class="footer-div">
-                    <p>Feels Like</p>
-                    <p class="weather_feelslike">15&#176</p>
+                    <p>Gauge</p>
+                    <p class="weather_feelslike gauge">15&#176</p>
                 </div>
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
