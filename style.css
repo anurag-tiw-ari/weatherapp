@@ -25,15 +25,14 @@ body{
 .container{
     margin: auto;
     width: 70%;
-    background-color: rgb(59, 59, 59);
-    filter: opacity(0.4);
-    margin-top: 15rem;
+    background-color: rgba(59, 59, 59,0.4);
+    margin-top: 10rem;
     padding: 2rem 5rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: start;
-    border: 1px solid white;
+    border: 1px solid rgb(126, 126, 126);
 }
 .weather-header{
     background-color: rgb(17, 17, 17);
@@ -50,9 +49,15 @@ body{
     padding: 0.1rem;
     margin-left: 1rem;
     background-color: rgb(17, 17, 17);
-    border: none;
     color: antiquewhite;
     width: 60%;
+    outline: none;
+    border: none;
+}
+.city_name::placeholder{
+    color: rgb(188, 187, 185);
+    font-size: 1rem;
+    text-transform: capitalize;
 }
 .weather-body{
     margin: auto;
@@ -65,27 +70,25 @@ body{
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-weight: 600;
+    color: rgb(255, 255, 255);
 }
 .weather-date--time{
     font-size: 1.6rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-weight: 400;
+    color: rgb(255, 255, 255);
 }
 .weather-data{
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap:2rem;
 }
 .weather-icon{
     text-align: center;
+    color: antiquewhite;
 }
-.fa-cloud
-{
-   font-size: 4rem;
-   text-align: center;
-}
+
 .weather-forecast{
     background-color: black;
     padding: 1rem 2rem;
@@ -99,15 +102,16 @@ body{
     font-family: sans-serif;
     font-size: 2rem;
     text-align: center;
-    margin-top: 1.5rem;
+    color: antiquewhite;
 }
 .weather-minmax{
     display: flex;
     gap: 2rem;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: sans-serif;
     font-weight: 500;
+    color: antiquewhite;
     margin-top: 1rem;
 }
 .weather-info
@@ -145,9 +149,10 @@ body{
 .weather_feelslike
 {
     font-size: 1.2rem !important;
-    text-transform: capitalize;
+   /* text-transform: capitalize;*/
     color: rgb(79 79 79)
 }
+
 /*.wctwo{
     background-color: rgb(248, 183, 183);
 }
